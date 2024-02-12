@@ -1,0 +1,1 @@
+### For car dealers, we provide overall understanding of what makes car value change. This is very important to handle the car stock and to sell cars communicating with customers. In this report we will share the analaysis results in terms of coefficiency of each attribute as much as possible.

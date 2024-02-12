@@ -18,13 +18,14 @@ For car dealers, we provide an overall understanding of what makes car value cha
 - Keep null data by filling out with missing. (421K data)
 - Cut off potential outliers, just in case and keep the data with odometer < 300000, price<100000, and year>1990
 
-
-### Modeling
-Linear regression price modeling using only Odometer and Year.
-Linear regression price modeling using all columns as much as possible
-
-### Evaluation
+### Modeling and Evaluation
 In this type of car pricing data, the simple linear regression makes sense. We do not want to drop columns by using LASSO. Ridge requires essentially scaler standardization, which makes the result difficult to understand for dealer people. Also, linear regression without higher order does not make sense since we have so many factors we need to handle already, so adding the higher order makes it a higher cost in terms of computing. The key evaluation point was not for model selection but for categorical column selection, so overall MSE becomes reasonably low within reasonable calculation time.
+
+(A) Linear regression price modeling using only Odometer and Year.
+(B) Linear regression price modeling using all columns as much as possible
+
+(A) MSE:263,915
+(B) MSE:83,308,971
 
 ### Deployment
 

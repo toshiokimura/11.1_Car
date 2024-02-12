@@ -1,6 +1,6 @@
 ### Business Understanding
 
-### For car dealers, we provide overall understanding of what makes car value change. This is very important to handle the car stock and to sell cars communicating with customers. In this report we will share the analaysis results in terms of coefficiency of each attribute as much as possible.
+For car dealers, we provide overall understanding of what makes car value change. This is very important to handle the car stock and to sell cars communicating with customers. In this report we will share the analysis results in terms of coefficiency of each attribute as much as possible.
 
 ### Data Understanding
 ##### 1. Overall data: Check how many data and columns are in the data set to see if we can handle them all in a reasonable process time

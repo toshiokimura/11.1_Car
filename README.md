@@ -12,6 +12,12 @@
 ##### 7. Data integrity: Remove unreasonable outliners so the data analysis result will not be distorted
 
 ### Data Preparation
+#####  - Overall data: 426K data in the data set. This could be a little bit large number to handle with a limited PC processing speed.
+#####  - Eliminate obvious non price dependant columns. ("id", "VIN")
+#####  - Confimred some of the columns such as size have so many missing data. If we eliminate all the data with null, only 79K data remains.
+#####  - Keep null data by filling out with missing. (421K data)
+#####  - Cut off potential outliers, just in case and keep the data with odometer < 300000, price<100000, and year>1990
+
 
 ### Modeling
 #### Price Modeling using only Odmeter and Year.

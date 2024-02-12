@@ -3,29 +3,29 @@
 For car dealers, we provide overall understanding of what makes car value change. This is very important to handle the car stock and to sell cars communicating with customers. In this report we will share the analysis results in terms of coefficiency of each attribute as much as possible.
 
 ### Data Understanding
-##### 1. Overall data: Check how many data and columns are in the data set to see if we can handle them all in a reasonable process time
-##### 2. Column data type: Check numerical or categorical. As needed change the data type to the appropriate ones
-##### 3. Data contents: Check null data existence and decide either to remove them or fill them out with alternate data
-##### 4. Column price dependency: Identify no price dependency columns and eliminate them
-##### 5. Column selection: Check how many columns are in the data set and what columns we should keep or drop
-##### 6. Data review: Check price distribution and counts by each column
-##### 7. Data integrity: Remove unreasonable outliners so the data analysis result will not be distorted
+1. Overall data: Check how many data and columns are in the data set to see if we can handle them all in a reasonable process time
+2. Column data type: Check numerical or categorical. As needed change the data type to the appropriate ones
+3. Data contents: Check null data existence and decide either to remove them or fill them out with alternate data
+4. Column price dependency: Identify no price dependency columns and eliminate them
+5. Column selection: Check how many columns are in the data set and what columns we should keep or drop
+6. Data review: Check price distribution and counts by each column
+7. Data integrity: Remove unreasonable outliners so the data analysis result will not be distorted
 
 ### Data Preparation
 #####  - Overall data: 426K data in the data set. This could be a little bit large number to handle with a limited PC processing speed.
-#####  - Eliminate obvious non price dependant columns. ("id", "VIN")
-#####  - Confimred some of the columns such as size have so many missing data. If we eliminate all the data with null, only 79K data remains.
+#####  - Eliminate obvious non price dependent columns. ("id", "VIN")
+#####  - Confirmed some of the columns such as size have so many missing data. If we eliminate all the data with null, only 79K data remains.
 #####  - Keep null data by filling out with missing. (421K data)
 #####  - Cut off potential outliers, just in case and keep the data with odometer < 300000, price<100000, and year>1990
 
 
 ### Modeling
 #### liner regression
-##### Price Modeling using only Odmeter and Year.
-##### Price Modeling using all calumns as much as possible
+##### Price Modeling using only Odometer and Year.
+##### Price Modeling using all columns as much as possible
 
 ### Evaluation
-#### In this type of car pricing data, the simple liner regression makes sense. We do not want to drop clumns by using LASSO. Ridge requires essentially scaler standardization, which makes the result difficult to understand for dealer peopole. Also linear regresstion without higher order does not makes sense since we have so many factors we need to handle already, so adding the higher order makes it higher cost in terms of computing. The key evaluation point was not for model selection but for categorical columns selection so overall MSE becomes reasonably low within reasonable calculation time.
+In this type of car pricing data, the simple linear regression makes sense. We do not want to drop columns by using LASSO. Ridge requires essentially scaler standardization, which makes the result difficult to understand for dealer people. Also, linear regression without higher order does not make sense since we have so many factors we need to handle already, so adding the higher order makes it a higher cost in terms of computing. The key evaluation point was not for model selection but for categorical column selection, so overall MSE becomes reasonably low within reasonable calculation time.
 
 ### Deployment
 

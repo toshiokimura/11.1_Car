@@ -24,7 +24,7 @@
 #### Price Modeling using all calumns as much as possible
 
 ### Evaluation
-#### In this type of data the simple liner regression makes sense. We do not want to drop clumns by using LASSO. Ridge requires essentially scaler standardization, which makes the result difficult to understand for dealer peopole. Also linear regresstion without higher order does not makes sense since we have so many factors we need to handle already adding the higher order makes it higher cost in terms of computing.
+#### In this type of car pricing data, the simple liner regression makes sense. We do not want to drop clumns by using LASSO. Ridge requires essentially scaler standardization, which makes the result difficult to understand for dealer peopole. Also linear regresstion without higher order does not makes sense since we have so many factors we need to handle already, so adding the higher order makes it higher cost in terms of computing. The key evaluation point was not for model selection but for categorical columns selection so overall MSE becomes reasonably low within reasonable calculation time.
 
 ### Deployment
 

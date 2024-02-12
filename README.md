@@ -27,6 +27,8 @@ In this type of car pricing data, the simple linear regression makes sense. We d
 (A) MSE:263,915
 (B) MSE:83,308,971
 
+Most likely caused by some of the outliers due to many columns selection, MSE becomes larger. In general, coefficiet of year an odometer for example gives us a reasonable pricing estimation.
+
 ### Deployment
 
 #### Based on the data, here are the findings

@@ -20,9 +20,8 @@ For car dealers, we provide overall understanding of what makes car value change
 
 
 ### Modeling
-liner regression
-Price Modeling using only Odometer and Year.
-Price Modeling using all columns as much as possible
+Linear regression price modeling using only Odometer and Year.
+Linear regression price modeling using all columns as much as possible
 
 ### Evaluation
 In this type of car pricing data, the simple linear regression makes sense. We do not want to drop columns by using LASSO. Ridge requires essentially scaler standardization, which makes the result difficult to understand for dealer people. Also, linear regression without higher order does not make sense since we have so many factors we need to handle already, so adding the higher order makes it a higher cost in terms of computing. The key evaluation point was not for model selection but for categorical column selection, so overall MSE becomes reasonably low within reasonable calculation time.
